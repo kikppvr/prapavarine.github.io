@@ -1,0 +1,50 @@
+@use '../util/'as *;
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    .header__navbar {
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    .header__logo {
+        color: $secondary;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.home-banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .home-banner__body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        color: $white;
+    }
+}

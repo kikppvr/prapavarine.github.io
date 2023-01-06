@@ -1,0 +1,22 @@
+@use '../util/'as *;
+
+.menu--main {
+
+    .menu__nav {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .menu__item {
+        &:last-child {
+            .menu__link {}
+        }
+    }
+
+    .menu__link {
+        color: $white;
+        text-decoration: none;
+        padding: 0 0.75rem;
+    }
+}

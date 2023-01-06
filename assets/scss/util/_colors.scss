@@ -1,0 +1,37 @@
+
+
+$primary:           #191d2b;
+$secondary:         #27AE60;
+$white:             #FFFFFF;
+$black:             #000;
+$grey-01:           #f8f8f8;
+$grey-02:           #dbe1e8;
+$grey-03:           #b2becd;
+$grey-04:           #6c7983;
+$grey-05:           #454e56;
+$grey-06:           #2a2e35;
+$grey-07:           #12181b;
+
+
+$box-shadow: 0 3px 15px rgba(0,0,0,.3);
+
+
+$colors: (
+    'primary':        $primary,
+    'secondary':      $secondary,
+    'white':          $white,
+    'black':          $black,
+    'grey-01':        $grey-01,
+    'grey-02':        $grey-02,
+    'grey-03':        $grey-03,
+    'grey-04':        $grey-04,
+    'grey-05':        $grey-05,
+);
+
+
+// background
+@each $color, $value in $colors {
+    .bg-#{$color} {
+        background-color: $value !important;
+    }
+}
