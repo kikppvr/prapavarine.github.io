@@ -10,7 +10,9 @@
 
     .menu__item {
         &:last-child {
-            .menu__link {}
+            .menu__link {
+                padding-right: 0;
+            }
         }
     }
 

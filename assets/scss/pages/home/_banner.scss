@@ -14,7 +14,7 @@
 
     .home-banner__body {
         position: absolute;
-        top: -60px;
+        top: -60px; // header height
         left: 0;
         right: 0;
         margin: auto;
@@ -25,7 +25,7 @@
     }
 
     .home-banner__text{
-        font-size: 19px;
+        font-size: 16px;
         font-weight: 500;
     }
 
@@ -36,7 +36,7 @@
     }
 
     .home-banner__subtext{
-        font-size: 19px;
+        font-size: 16px;
         font-weight: 500;
 
     }
