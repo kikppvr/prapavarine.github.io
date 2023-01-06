@@ -1,5 +1,6 @@
 @use 'util/'as *;
 @use 'layout/'as *;
+@use 'pages/'as *;
 @use 'components/'as *;
 
 * {
@@ -9,3 +10,12 @@
     list-style: none;
 }
 
+a,
+a:hover,
+a:focus,
+button,
+button:focus {
+    text-decoration: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
