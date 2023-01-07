@@ -9,6 +9,9 @@
     }
 
     .menu__item {
+
+        margin: 0 0.75rem;
+
         &:last-child {
             .menu__link {
                 padding-right: 0;
@@ -19,11 +22,33 @@
     .menu__link {
         color: $white;
         text-decoration: none;
-        padding: 0 0.75rem;
+        padding: 0;
+        position: relative;
         transition: all 0.3s ease-in-out;
 
+
+        // line
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: -0.4rem;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 0;
+            height: 1px;
+            opacity: 0;
+            background-color: $white;
+            transition: all 0.3s ease-in-out;
+
+        }
+
         &:hover {
-            color: $beige;
+    
+            &:before {
+                opacity: 1;
+                width: 100%;
+            }
         }
     }
 }

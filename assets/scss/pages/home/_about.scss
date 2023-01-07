@@ -7,7 +7,10 @@
     // background-color: $black;
     // background: linear-gradient(180deg rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
     // background: linear-gradient(180deg, $black 30%, rgba($black, 0.7) 50%, $white 100%);
+    // background-color: #1A1A1A;
     background-color: $black;
     backdrop-filter: blur(13px);
     @include section-padding();
+
+    color: #B3B3B3;
 }

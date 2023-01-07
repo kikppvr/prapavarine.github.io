@@ -21,3 +21,4 @@ $(window).scroll(function (e) {
 
     scrollPosition = currentPosition;
 });
+

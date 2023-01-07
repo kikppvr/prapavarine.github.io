@@ -1,0 +1,23 @@
+@use '../util/'as *;
+
+body {
+    scroll-behavior: smooth;
+
+    /* width of the entire scrollbar */
+    &::-webkit-scrollbar {
+        width: 10px;
+        border-radius: 0;
+        background-color: transparent;
+    }
+
+    /* color of the tracking area */
+    &::-webkit-scrollbar-track {
+        background-color: rgba($black, 0.69);
+
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $black;
+        border-radius: 0;
+    }
+}
