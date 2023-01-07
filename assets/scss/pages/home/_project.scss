@@ -10,8 +10,22 @@
     color: $black;
 
 
-    .home-project__title{
+    .home-project__title {
         font-size: 40px;
+        position: relative;
+        display: inline-flex;
+        margin-bottom: 0;
+        padding-bottom: 0.75rem;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40%;
+            height: 3px;
+            background-color: $blue;
+        }
     }
 
     .home-project__tabs {
