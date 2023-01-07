@@ -14,7 +14,8 @@
 
     .home-banner__body {
         position: absolute;
-        top: -60px; // header height
+        // top: -60px; // header height
+        top: calc(100% - 60px);
         left: 0;
         right: 0;
         margin: auto;
