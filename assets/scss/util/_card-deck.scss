@@ -1,0 +1,32 @@
+
+@use 'breakpoints'as *;
+
+.card-deck {
+    .card {
+        flex: 0 0 calc((100% / 3) - 30px);
+        flex-basis: calc((100% / 3) - 30px);
+        flex-basis: calc((100% / 3) - 30px) !important;
+        max-width: calc((100% / 3) - 30px) !important;
+        width: calc((100% / 3) - 30px) !important;
+        margin-right: calc(30px / 2) !important;
+        margin-left: calc(30px / 2) !important;
+        margin-bottom: 2rem !important;
+
+        @include media-breakpoint-down(md) {
+            flex: 0 0 calc((100% / 2) - 30px);
+            flex-basis: calc((100% / 2) - 30px);
+            flex-basis: calc((100% / 2) - 30px) !important;
+            max-width: calc((100% / 2) - 30px) !important;
+            width: calc((100% / 2) - 30px) !important;
+            margin-bottom: 2rem !important;
+        }
+
+        @include media-breakpoint-down(sm) {
+            flex: 0 0 calc((100% / 1) - 30px);
+            flex-basis: calc((100% / 1) - 30px);
+            flex-basis: calc((100% / 1) - 30px) !important;
+            max-width: calc((100% / 1) - 30px) !important;
+            width: calc((100% / 1) - 30px) !important;
+        }
+    }
+}

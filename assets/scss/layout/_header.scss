@@ -16,8 +16,12 @@
 
 
     &.scroll-up {
+        
+        background-color: rgba($black,0.4);
+        backdrop-filter: blur(13px);
+        
         @include media-breakpoint-up(xl) {
-            // transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
         }
     }
 
