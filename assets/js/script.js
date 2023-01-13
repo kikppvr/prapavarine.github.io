@@ -30,4 +30,20 @@ $(document).ready(function () {
             $('.header').removeClass('header--on-open');
         });
     }
+
+
+    //set height banner
+    function setHeight() {
+        let height = $(window).innerHeight();
+        $('.home-banner').css('height', height);
+    }
+    
+    setTimeout(() => {
+        setHeight();
+    }, 100);
+    
+    $(window).resize(() => {
+        setHeight();
+    });
 });
+
