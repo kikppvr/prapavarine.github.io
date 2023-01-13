@@ -5,11 +5,9 @@
     padding: 6rem 0;
 
     @include media-breakpoint-down(lg){
-        padding: 5rem 0;
-    }
-    @include media-breakpoint-down(md){
         padding: 4rem 0;
     }
+
     @include media-breakpoint-down(sm){
         padding: 3rem 0;
     }

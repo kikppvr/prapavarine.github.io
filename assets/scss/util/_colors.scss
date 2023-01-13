@@ -8,25 +8,26 @@ $beige:              #D5CEA3;
 $grey:               #E5E5CB;
 $blue:               #5F6084;
 $green:              #5F8184;
+$green-01:           #42B5B1;
 
 $box-shadow: 0 3px 15px rgba(0,0,0,.3);
 
 
-$colors: (
+// $colors: (
 
-    'white':          $white,
-    'black':          $black,
-    'dark-brown':     $dark-brown,
-    'brown':          $brown,
-    'beige':          $beige,
-    'grey':           $grey,
+//     'white':          $white,
+//     'black':          $black,
+//     'dark-brown':     $dark-brown,
+//     'brown':          $brown,
+//     'beige':          $beige,
+//     'grey':           $grey,
    
-);
+// );
 
 
-// background
-@each $color, $value in $colors {
-    .bg-#{$color} {
-        background-color: $value !important;
-    }
-}
+// // background
+// @each $color, $value in $colors {
+//     .bg-#{$color} {
+//         background-color: $value !important;
+//     }
+// }
