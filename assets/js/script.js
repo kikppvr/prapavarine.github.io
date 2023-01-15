@@ -32,10 +32,11 @@ $(window).scroll(function (e) {
 
 $(document).ready(function () {
 
-    $('body').scrollspy({
-        target: this,
-        offset: 500
-    });
+
+    // $('body').scrollspy({
+    //     target: this,
+    //     offset: 500
+    // });
 
     $(this).find('.menu__link').click((e) => {
         e.preventDefault();
@@ -63,6 +64,7 @@ $(document).ready(function () {
         });
     }
 
+
     //set height banner
     function setHeight() {
         let height = $(window).innerHeight();
@@ -71,9 +73,11 @@ $(document).ready(function () {
 
     setTimeout(() => {
         setHeight();
+        scrollspy();
     }, 100);
 
     $(window).resize(() => {
         setHeight();
+        scrollspy();
     });
 });

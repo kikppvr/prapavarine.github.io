@@ -16,27 +16,17 @@
     // transform: translate3d(0, 0, 0);
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
 
+
+
     &.header--black {
         background-color: rgba($black, 0.4);
         backdrop-filter: blur(13px);
     }
 
-    @include media-breakpoint-down(lg) {
-
-        //tablet mobile
-        &.header--on-open {
-            background-color: $black;
-
-            .header__menu {
-                background-color: $black;
-                position: fixed;
-                width: 100%;
-                top: 70px;
-                left: 0;
-                transition: background-color 0.3s ease-in-out;
-            }
-        }
+    &.header--on-open {
+        background-color: $black;
     }
+
 
 
     // &.scroll-up {
@@ -113,12 +103,24 @@
         }
     }
 
+    //tablet mobile
     .header__menu {
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
+            background-color: $black;
+            position: fixed;
             width: 100%;
-            position: absolute;
-            top: 0;
+            top: 70px;
+            left: 0;
+            transition: background-color 0.3s ease-in-out;
         }
     }
+
+    // .header__menu {
+    //     @include media-breakpoint-down(lg) {
+    //         width: 100%;
+    //         position: absolute;
+    //         top: 0;
+    //     }
+    // }
 
 }
