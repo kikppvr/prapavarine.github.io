@@ -40,9 +40,21 @@
         width: 100%;
         margin-bottom: 0;
         color: rgba($white, 0.6);
+        transition: all 0.3s ease-in-out;
+
+        
+        &:hover{
+            color: $green-01;
+        }
     }
 
     a {
-        color: rgba($white, 0.6)
+        color: rgba($white, 0.6);
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            color: $green-01;
+        }
+
     }
 }
