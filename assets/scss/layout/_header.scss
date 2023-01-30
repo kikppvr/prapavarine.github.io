@@ -16,8 +16,6 @@
     // transform: translate3d(0, 0, 0);
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
 
-
-
     &.header--black {
         background-color: rgba($black, 0.4);
         backdrop-filter: blur(13px);
@@ -25,6 +23,7 @@
 
     &.header--on-open {
         background-color: $black;
+        transition: background-color 0.3s ease-in-out
     }
 
 
@@ -115,12 +114,5 @@
         }
     }
 
-    // .header__menu {
-    //     @include media-breakpoint-down(lg) {
-    //         width: 100%;
-    //         position: absolute;
-    //         top: 0;
-    //     }
-    // }
 
 }
